@@ -18,6 +18,18 @@ A time series database typically separates the set of fixed, discrete characteri
 
 The databases vary significantly in their features, but most will enable features to create, read, update and delete the time-value pairs as well as the points to which they are associated. Additional features for calculations, interpolation, filtering, and analysis are commonly found, but are not commonly equivalent.
 
+### 1.3 TSDB Scenarios
+
+Now let’s consider a few examples of time-series workloads:
+
+-   **DevOps/server/container monitoring**. The system typically collects metrics about different servers or containers: CPU usage, free/used memory, network tx/rx, disk IOPS, etc. Each set of metrics is associated with a timestamp, unique server name/ID, and a set of tags that describe an attribute of what is being collected.
+
+-   **IoT sensor data**. Each IoT device may report multiple sensor readings for each time period. As an example, for environmental and air quality monitoring this could include: temperature, humidity, barometric pressure, sound levels, measurements of nitrogen dioxide, carbon monoxide, particulate matter, etc. Each set of readings is associated with a timestamp and unique device ID, and may contain other metadata.
+
+-   **Financial data**. Financial tick data may include streams with a timestamp, the name of the security, and its current price and/or price change. Another type of financial data is payment transactions, which would include a unique account ID, timestamp, transaction amount, as well as any other metadata. (Note that this data is different than the OLTP example above: here we are recording every transaction, while the OLTP system was just reflecting the current state of the system.)
+
+-   **Fleet/asset management**. Data may include a vehicle/asset ID, timestamp, GPS coordinates at that timestamp, and any metadata.
+
 ## 2. List of Time Series Database
 
 ### 2.1 [InfluxDB](https://github.com/influxdata/influxdb)
@@ -26,10 +38,8 @@ The databases vary significantly in their features, but most will enable feature
 
 InfluxDB is an open source time series platform. This includes APIs for storing and querying data, processing it in the background for ETL or monitoring and alerting purposes, user dashboards, and visualizing and exploring the data and more. The master branch on this repo now represents the latest InfluxDB, which now includes functionality for Kapacitor (background processing) and Chronograf (the UI) all in a single binary.
 
-More at [here](./influxdb/README.md)
+More information at [here](./influxdb/README.md)
 
 ### 2.2 [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics)
 
 VictoriaMetrics is fast, cost-effective and scalable monitoring solution and time series database.
-
-
