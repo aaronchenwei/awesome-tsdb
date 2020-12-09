@@ -23,6 +23,7 @@ The databases vary significantly in their features, but most will enable feature
 ### 2.1 [InfluxDB](https://github.com/influxdata/influxdb)
 
 ![](./assets/Influxdb_logo.png)
+
 InfluxDB is an open source time series platform. This includes APIs for storing and querying data, processing it in the background for ETL or monitoring and alerting purposes, user dashboards, and visualizing and exploring the data and more. The master branch on this repo now represents the latest InfluxDB, which now includes functionality for Kapacitor (background processing) and Chronograf (the UI) all in a single binary.
 
 More at [here](./influxdb/README.md)
