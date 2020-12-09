@@ -6,15 +6,17 @@ In many cases, the repositories of time-series data will utilize compression alg
 
 ## Overview
 
-A time series database typically separates the set of fixed, discrete characteristics from its dynamic, continuous values into sets of points or 'tags.' An example is the storage of CPU utilization for performance monitoring: the fixed characteristics would include the name 'CPU Utilization' the units of measure '%' and a range '0 to 1'; and the dynamic values would store the utilization percentage and a timestamp. The separation is intended to efficiently store and index data for application purposes which can search through the set of points differently than the time-indexed values.
-
-The databases vary significantly in their features, but most will enable features to create, read, update and delete the time-value pairs as well as the points to which they are associated. Additional features for calculations, interpolation, filtering, and analysis are commonly found, but are not commonly equivalent.
-
-## Time Series
+### Time Series
 
 A **time series** is a series of data points indexed (or listed or graphed) in time order. Most commonly, a time series is a sequence taken at successive equally spaced points in time. Thus it is a sequence of discrete-time data. Time Series analysis can be useful to see how a given asset, security or economic variable changes over time. Examples of time series are heights of ocean tides, counts of sunspots, and the daily closing value of the Dow Jones Industrial Average.
 
 Time series are very frequently plotted via run charts (a temporal line chart). Time series are used in statistics, signal processing, pattern recognition, econometrics, mathematical finance, weather forecasting, earthquake prediction, electroencephalography, control engineering, astronomy, communications engineering, and largely in any domain of applied science and engineering which involves temporal measurements.
+
+### TSDB
+
+A time series database typically separates the set of fixed, discrete characteristics from its dynamic, continuous values into sets of points or 'tags.' An example is the storage of CPU utilization for performance monitoring: the fixed characteristics would include the name 'CPU Utilization' the units of measure '%' and a range '0 to 1'; and the dynamic values would store the utilization percentage and a timestamp. The separation is intended to efficiently store and index data for application purposes which can search through the set of points differently than the time-indexed values.
+
+The databases vary significantly in their features, but most will enable features to create, read, update and delete the time-value pairs as well as the points to which they are associated. Additional features for calculations, interpolation, filtering, and analysis are commonly found, but are not commonly equivalent.
 
 ## List of Time Series Database
 
