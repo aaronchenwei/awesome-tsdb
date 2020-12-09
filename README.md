@@ -43,3 +43,9 @@ More information at [here](./influxdb/README.md)
 ### 2.2 [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics)
 
 VictoriaMetrics is fast, cost-effective and scalable monitoring solution and time series database.
+
+### 2.3 [Prometheus](https://github.com/prometheus/prometheus)
+
+Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
+
+
