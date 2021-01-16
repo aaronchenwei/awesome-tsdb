@@ -83,3 +83,4 @@ Amazon Timestream is ideal for DevOps solutions that monitor health and usage me
 Amazon Timestream enables you to easily store and analyze data at scale. For example, with clickstream data, you can use Amazon Timestream to store and process the incoming and outgoing web traffic for your applications. Amazon Timestream also provides aggregate functions to analyze this data and get insights such as path-to-purchase and shopping cart abandonment rate.
 
 ![](./assets/product-page-diagram_Amazon-Timestream_Analytics.png)
+
